@@ -1,7 +1,7 @@
 {
 	"name": "@crazygl/hero-cursor-reveal-text",
-	"version": "0.1.0",
-	"description": "Cursor Reveal Text — two stacked paragraphs where a cursor-following spotlight reveals the second one through the first.",
+	"version": "0.1.1",
+	"description": "Cursor Reveal Text — Two stacked paragraphs — a primary line shown in the surface colour, and a secret reveal line shown only inside a cursor-following spotlight that grows on hover. A customizable CrazyGL animated hero section — WebGL, React, drop-in.",
 	"type": "module",
 	"main": "./dist/index.js",
 	"module": "./dist/index.js",
@@ -21,7 +21,7 @@
 		"LICENSE"
 	],
 	"dependencies": {
-		"@crazygl/core": "^0.1.0"
+		"@crazygl/core": "^0.1.1"
 	},
 	"peerDependencies": {
 		"react": ">=18",
@@ -36,5 +36,28 @@
 	},
 	"publishConfig": {
 		"access": "public"
+	},
+	"keywords": [
+		"cursor",
+		"reveal",
+		"spotlight",
+		"typography",
+		"interactive",
+		"cursor-reveal-text",
+		"crazygl",
+		"hero",
+		"hero-section",
+		"webgl",
+		"react",
+		"animation",
+		"ui",
+		"landing-page",
+		"frontend",
+		"component",
+		"canvas",
+		"three"
+	],
+	"bugs": {
+		"url": "https://github.com/crazygl-com/hero-cursor-reveal-text/issues"
 	}
 }

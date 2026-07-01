@@ -3,7 +3,7 @@ name: cursor-reveal-text
 description: "Two stacked paragraphs — a primary line shown in the surface colour, and a secret reveal line shown only inside a cursor-following spotlight that grows on hover."
 metadata:
   author: "@ybouane"
-  version: "0.1.0"
+  version: "0.1.1"
 ---
 
 ## How To Use This Skill

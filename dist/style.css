@@ -1,0 +1,21 @@
+crazygl-hero[data-crazygl="cursor-reveal-text"] {
+	crazygl-stage { position: absolute; inset: 0; z-index: 0; overflow: hidden; }
+	.crazygl-crt-layer {
+		position: absolute; inset: 0;
+		display: flex; align-items: center; justify-content: center;
+		padding: clamp(24px, 5vw, 56px);
+	}
+	.crazygl-crt-inner { display: block; }
+	.crazygl-crt-revealed-layer {
+		position: absolute; inset: 0;
+		clip-path: circle(20px at 50% 50%);
+		-webkit-clip-path: circle(20px at 50% 50%);
+		pointer-events: none;
+		/* No `transition: clip-path` here. Every frame the JS sets a fresh
+		   clip-path with a slightly different position; with a CSS
+		   transition the browser tries to ease between every two of those
+		   states, which produced the lag and the "starts slow then
+		   accelerates" feel. Smoothing now lives entirely in JS. */
+	}
+	crazygl-content { position: absolute; inset: 0; z-index: 1; display: none; }
+}

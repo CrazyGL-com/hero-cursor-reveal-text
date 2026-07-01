@@ -1,0 +1,40 @@
+{
+	"name": "@crazygl/hero-cursor-reveal-text",
+	"version": "0.1.0",
+	"description": "Cursor Reveal Text — two stacked paragraphs where a cursor-following spotlight reveals the second one through the first.",
+	"type": "module",
+	"main": "./dist/index.js",
+	"module": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js"
+		},
+		"./metadata.json": "./metadata.json",
+		"./style.css": "./style.css"
+	},
+	"files": [
+		"dist",
+		"metadata.json",
+		"style.css",
+		"LICENSE"
+	],
+	"dependencies": {
+		"@crazygl/core": "^0.1.0"
+	},
+	"peerDependencies": {
+		"react": ">=18",
+		"react-dom": ">=18"
+	},
+	"license": "Apache-2.0",
+	"author": "ybouane",
+	"homepage": "https://crazygl.com/hero/cursor-reveal-text",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/crazygl-com/hero-cursor-reveal-text.git"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
+}

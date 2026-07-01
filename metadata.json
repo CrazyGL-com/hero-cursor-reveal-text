@@ -1,0 +1,189 @@
+{
+	"name": "Cursor Reveal Text",
+	"slug": "cursor-reveal-text",
+	"version": 1,
+	"description": "Two stacked paragraphs — a primary line shown in the surface colour, and a secret reveal line shown only inside a cursor-following spotlight that grows on hover.",
+	"dependencies": [],
+	"authorName": "@ybouane",
+	"authorUrl": "https://x.com/ybouane",
+	"tags": [
+		"cursor",
+		"reveal",
+		"spotlight",
+		"typography",
+		"interactive"
+	],
+	"category": "Typography",
+	"featured": true,
+	"dateCreated": 1780617600000,
+	"poster": "/images/heroes/cursor-reveal-text.png",
+	"install": {
+		"package": "@crazygl/hero-cursor-reveal-text"
+	},
+	"config": {
+		"managedWidth": true,
+		"innerWidth": 1200,
+		"managedHeight": true,
+		"defaultHeight": 720,
+		"styleInheritance": "none",
+		"usesCanvas": false,
+		"usesWebGL": false,
+		"usesThree": false,
+		"pointerTracking": true,
+		"resizeTracking": true,
+		"scrollTracking": false,
+		"supportsImages": false,
+		"supportsTransparency": true,
+		"interactive": true,
+		"supportsFontCustomization": true,
+		"interactivityModes": [
+			"pointer",
+			"none"
+		],
+		"interactivity": "pointer"
+	},
+	"customizer": {
+		"sections": [
+			{
+				"label": "Content",
+				"fields": [
+					{
+						"id": "primaryText",
+						"label": "Primary text",
+						"type": "textarea",
+						"default": "I'm a selectively skilled product designer with strong focus on producing high-quality and impactful digital experiences."
+					},
+					{
+						"id": "revealText",
+						"label": "Reveal text",
+						"type": "textarea",
+						"default": "Crafting elegant solutions through code — where creativity meets functionality — building digital experiences that users actually enjoy."
+					}
+				]
+			},
+			{
+				"label": "Spotlight",
+				"fields": [
+					{
+						"id": "defaultSize",
+						"label": "Default size",
+						"type": "slider",
+						"default": 40,
+						"min": 10,
+						"max": 200,
+						"step": 5,
+						"unit": "px"
+					},
+					{
+						"id": "hoverSize",
+						"label": "Hover size",
+						"type": "slider",
+						"default": 400,
+						"min": 100,
+						"max": 800,
+						"step": 10,
+						"unit": "px"
+					},
+					{
+						"id": "cursorFollowSpeed",
+						"label": "Cursor follow smoothing",
+						"type": "slider",
+						"default": 0.5,
+						"min": 0.05,
+						"max": 1,
+						"step": 0.02,
+						"description": "Lower = laggy / liquid; higher = snaps to cursor."
+					},
+					{
+						"id": "transitionDuration",
+						"label": "Grow / shrink duration",
+						"type": "slider",
+						"default": 0.5,
+						"min": 0.05,
+						"max": 2,
+						"step": 0.05,
+						"unit": "s"
+					}
+				]
+			},
+			{
+				"label": "Colours",
+				"fields": [
+					{
+						"id": "bgColor",
+						"label": "Background",
+						"type": "color",
+						"default": "#0f0f0f"
+					},
+					{
+						"id": "textColor",
+						"label": "Primary text colour",
+						"type": "color",
+						"default": "#c299d0"
+					},
+					{
+						"id": "revealBgColor",
+						"label": "Reveal background",
+						"type": "color",
+						"default": "#5e057e"
+					},
+					{
+						"id": "revealTextColor",
+						"label": "Reveal text colour",
+						"type": "color",
+						"default": "#0f0f0f"
+					}
+				]
+			},
+			{
+				"label": "Typography",
+				"fields": [
+					{
+						"id": "fontSize",
+						"label": "Font size",
+						"type": "slider",
+						"default": 36,
+						"min": 14,
+						"max": 96,
+						"step": 1,
+						"unit": "px"
+					},
+					{
+						"id": "lineHeight",
+						"label": "Line height",
+						"type": "slider",
+						"default": 1.3,
+						"min": 1,
+						"max": 1.8,
+						"step": 0.02
+					},
+					{
+						"id": "maxWidth",
+						"label": "Max width",
+						"type": "slider",
+						"default": 1000,
+						"min": 320,
+						"max": 1400,
+						"step": 10,
+						"unit": "px"
+					},
+					{
+						"id": "headingFontFamily",
+						"label": "Font",
+						"type": "font",
+						"default": "Inter"
+					},
+					{
+						"id": "headingFontWeight",
+						"label": "Weight",
+						"type": "slider",
+						"default": 500,
+						"min": 100,
+						"max": 900,
+						"step": 100
+					}
+				]
+			}
+		]
+	}
+}
